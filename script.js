@@ -13,14 +13,9 @@ function showMeSomething() {
   }
 }
 
-function changeLinks() {
-  // document.getElementById('name')
-  // textContent = 'Dryhelly'
-}
-
 function getGitHubProfileInfos() {
   const url = `https://api.github.com/users/${linksSocial.github}`
-  //alert(url)
+
   fetch(url)
     .then(res => res.json())
     .then(data => {
