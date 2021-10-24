@@ -15,12 +15,38 @@ body {
 body {
   display: grid;
   place-items: center;
+  background: #3c212a
 }
 
-main {
-  background: url('images/background.png');
-  width: 375px;
-  height: 812px;
+main{
+  background: url('images/background.png') no-repeat center/cover;
+  width: 100vw;
+  max-width: 375px;
+  min-height: 812px;
+  height: 100vh;
+  border-radius: 10px;
+}
+
+@media (min-width: 720px){
+  main{
+    max-width: 375px;
+  }
+
+  body{
+    background: #3c212a
+  }
+}
+
+@media (min-width: 960px){
+  main{
+    max-width: 375px;
+    margin: 20px 0;
+    
+  }
+
+  body{
+    background: #3c212a
+  }
 }
 
 h1 {
